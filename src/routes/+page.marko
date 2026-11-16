@@ -1,0 +1,9 @@
+<let/open=false/>
+
+<h1>Run.href repro</h1>
+<button onClick() { open = !open }>Toggle</button>
+
+<if=open>
+  <!-- Rendered on the client after the click, so this Run.href ships in the client bundle -->
+  <a href=Run.href("/about")>About</a>
+</if>
